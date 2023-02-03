@@ -7,4 +7,8 @@ export class InMemoryNotificationsRepository implements NotificationRepository {
   async create(notification: Notification) {
     this.notifications.push(notification);
   }
+
+  async listAll(): Promise<Notification[]> {
+    return this.notifications;
+  }
 }

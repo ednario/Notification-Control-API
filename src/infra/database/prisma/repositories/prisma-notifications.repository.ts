@@ -22,4 +22,8 @@ export class PrismaNotificationRepository implements NotificationRepository {
       },
     });
   }
+
+  async listAll(): Promise<any> {
+    return await this.prismaService.notification.findMany();
+  }
 }
