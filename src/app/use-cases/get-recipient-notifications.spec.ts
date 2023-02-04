@@ -3,7 +3,7 @@ import { makeNotification } from '@test/factories/notification-factory';
 import { GetRecipientNotification } from './get-recipient-notifications';
 
 describe('Count notification', () => {
-  it('should be able to count the notification number of a recipient', async () => {
+  it('should be able to fetch notifications by recipient', async () => {
     const notificationRepository = new InMemoryNotificationsRepository();
     const getRecipientNotifications = new GetRecipientNotification(
       notificationRepository,
