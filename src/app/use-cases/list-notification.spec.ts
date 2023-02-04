@@ -1,5 +1,6 @@
-import { InMemoryNotificationsRepository } from '../../../test/repositories/in-memory-notifications-repository';
-import { ListNotifications } from './list-notifications';
+import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
+
+import { ListNotifications } from '@app/use-cases/list-notifications';
 
 describe('List notifications', () => {
   it('should be able to return all notifications', async () => {

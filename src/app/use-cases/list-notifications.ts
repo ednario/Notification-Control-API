@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
-import { Notification } from '../entities/notification';
-import { NotificationRepository } from '../repositories/notification-repository';
+import { Notification } from '@app/entities/notification';
+import { NotificationRepository } from '@app/repositories/notification-repository';
 
 @Injectable()
 export class ListNotifications {
